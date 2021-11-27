@@ -111,6 +111,6 @@ ${goto 35}Total Download: ${totaldown wlp1s0}
 #${texeci 1000 feh --bg-scale ~/.kde4/share/wallpapers/ArchLinux.jpg}
 #Trying
 ${font ConkySymbols:size=16}Y${font} ${voffset -10} ◘ IP
-${goto 35}Public: ${exec curl -s www.icanhazip.com}
+# ${goto 35}Public: ${exec curl -s www.icanhazip.com}
 ${goto 35}Private: ${exec hostname -I}
 ${voffset 20}

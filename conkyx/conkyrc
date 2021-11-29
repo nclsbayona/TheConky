@@ -6,7 +6,7 @@
 # Feel free to modity this script ;)
 
 background no
-font Droid Sans:size=8
+font Droid Sans:size=7
 xftfont Droid Sans:size=8
 use_xft yes
 xftalpha 0
@@ -23,7 +23,7 @@ total_run_times 0
 own_window_class Conky
 own_window yes
 own_window_type conky
-own_window_transparent no
+own_window_transparent yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
 # for kde user
@@ -40,7 +40,7 @@ draw_outline no
 draw_borders no
 draw_graph_borders no
 minimum_size 250
-maximum_width 250
+maximum_width 500
 default_color ffffff
 default_shade_color 000000
 draw_outline no
@@ -107,10 +107,8 @@ ${goto 35}Download: ${downspeed wlp1s0}
 ${goto 35}Upload: ${upspeed wlp1s0}
 ${goto 35}Total Download: ${totaldown wlp1s0}
 
-# comment this code if you not using kde
-#${texeci 1000 feh --bg-scale ~/.kde4/share/wallpapers/ArchLinux.jpg}
 #Trying
-${font ConkySymbols:size=16}Y${font} ${voffset -10} ◘ IP
+${font ConkySymbols:size=16}Y${font} ${voffset -10} IP»
 # ${goto 35}Public: ${exec curl -s www.icanhazip.com}
-${goto 35}Private: ${exec hostname -I}
+${goto 35}${font Droid Sans:size=6}Private: ${exec hostname -I}
 ${voffset 20}

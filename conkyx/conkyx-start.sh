@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sleep 20 && sh -c "conky -c $(pwd)/conkyrc"
+sleep 20 && sh -c "conky -c ~/git/TheConky/conkyx/conkyrc"
